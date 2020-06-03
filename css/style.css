@@ -19,10 +19,12 @@ body{
 }
 .header{
     position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
     background-color: #333333;
     height: 70px;
-    z-index: 9;
+    z-index: 50;
 }
 .header__inner{
     padding-top: 9px;
@@ -348,7 +350,7 @@ padding-bottom: 20px;
     display: none;
 }
 .active{
-    display: flex;
+    
 }
 
 
@@ -356,14 +358,22 @@ padding-bottom: 20px;
     .container{
         width: 95%;
     }
+    .header__logo{
+        position: relative;
+        z-index: 9;
+    }
     .header__contacts{
         display: none;
     }
     .phone-adaptive{
+        position: relative;
+        z-index: 9;
         width: 32px;
         height: 32px;
     }
     .email-adaptive{
+        position: relative;
+        z-index: 9;
         margin-top: 3px;
         margin-right: 10px;
         width:35px;
@@ -376,7 +386,7 @@ padding-bottom: 20px;
         height: 20px;
         z-index: 9;
         order: 0;
-        margin-right: 25px;
+        margin-right: 75px;
     }
     
     .header__burger span{
@@ -464,7 +474,29 @@ padding-bottom: 20px;
         margin-bottom: 40px;
     }
     .header__nav{
-        display: none;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        padding: 100px 10px 0px 10px;
+        transition: 0.3s;
+    }
+    .header__nav.active{
+        top: 0;
+    }
+    .header__menu{
+        display: block;
+        text-align: center;
+    }
+    .header__menu li{
+               margin-bottom: 40px;
+    }
+    .header__link{
+        font-size: 22px;
+        font-weight: 400;
+ 
     }
     
 }
@@ -473,14 +505,18 @@ padding-bottom: 20px;
         width: 100px;
         height: 25px;
     }
+    .header__burger{
+        margin-right: 15px;
+    }
     .promo__title{
         left: 0%;
         top: 38%;
         font-size: 28px;
     }
     .promo__btn-info{
-        padding: 15px 45px;
-        left: 23%;
+        padding: 10px 30px;
+        font-size: 18px;
+        left: 28%;
         top: 52%;
     }
     .production__title{
@@ -495,7 +531,7 @@ padding-bottom: 20px;
     }
     .info-btn{
         margin-bottom: 30px;
-        padding: 15px 91px;
+        padding: 15px 85px;
     }
     .product__descr{
         font-size: 15px;
