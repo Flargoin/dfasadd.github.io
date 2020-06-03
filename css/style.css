@@ -17,6 +17,9 @@ body{
     margin: 0 auto;
     width: 95%;
 }
+.header__contacts-adaptive{
+    display: none;
+}
 .header{
     position: fixed;
     left: 0;
@@ -173,6 +176,10 @@ margin-bottom: 50px;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 30px;
+}
+
+.slick-slider{
+    display: none;
 }
 .product__btn{
     margin-bottom: 150px;
@@ -510,14 +517,14 @@ padding-bottom: 20px;
     }
     .promo__title{
         left: 0%;
-        top: 38%;
-        font-size: 28px;
+        top: 36%;
+        font-size: 26px;
     }
     .promo__btn-info{
         padding: 10px 30px;
         font-size: 18px;
         left: 28%;
-        top: 52%;
+        top: 57%;
     }
     .production__title{
         font-size: 28px;
