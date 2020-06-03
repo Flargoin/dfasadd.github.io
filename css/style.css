@@ -1,0 +1,550 @@
+/* Главная страница начало */
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #AB9170;
+    font-family: "Amiko", sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #333333;
+    height: 70px;
+    z-index: 9;
+}
+.header__inner{
+    padding-top: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo{
+    width: 164px;
+    height: 37px;
+}
+.header__menu{
+    display: flex;
+    align-items: center;
+}
+.header__menu li{
+    list-style: none;
+}
+.header__link{
+    text-decoration: none;
+    margin-right: 30px;
+    color:#fefefe;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 1px 1px 0px rgba(51, 51, 51, 0.17);
+    transition: 0.3s;
+    padding-bottom: 3px;
+}
+.header__link:hover{
+    color: #AB9170;
+    text-shadow: 1px 1px 0px rgba(255, 0, 46, 0.25);
+    border-bottom: 2px solid #5E2832 ;
+}
+.header__contacts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header__phone,
+.header__email{
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    margin-bottom: -2px;
+}
+.phone{
+    font-size: 18px;
+}
+.email{
+    font-size: 12px;
+}
+.phone,
+.email{
+    color: #fefefe;
+    text-decoration: none;
+    line-height: 24px;
+    text-shadow: 0px 1.5px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+.phone:hover,
+.email:hover{
+    color: #AB9170;
+    text-shadow: 1px 1px 0px rgba(255, 0, 46, 0.25);
+}    
+.promo{
+        background-image:url(../img/bcg-promo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:0 auto;
+        max-width: 100%;
+        height: 100vh;
+        position: relative;
+        margin-bottom: 85px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+}
+.promo__title{
+    position: absolute;
+    top:40%;
+    left: 33%;
+    display: flex;
+    max-width: 650px;
+    margin-top: 0;
+    font-family: 'Play';
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #333333;
+    text-shadow: 1px 5px 3px rgba(254, 254, 254, 0.2)
+}
+.promo__btn-info{
+    position: absolute;
+    top: 61%;
+    left: 43%;
+    padding: 18px 63px;
+    font-size: 20px;
+    color: #fefefe;
+    border:none;
+    background: rgba(232, 48, 48, 0.85);
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.promo__btn-info:hover{
+box-sizing: border-box;
+box-shadow: 4px 4px 4px rgba(254, 254, 254, 0.35);
+border-radius: 10px;
+}
+.scroll{
+    position: absolute;
+    top: 88%;
+    left: 48%;
+}
+
+
+.production__title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 85px;
+}
+.product__name{
+font-weight: 600;
+font-size: 28px;
+padding-bottom: 5px;
+border-bottom: 2px solid #333;
+max-width: 160px;
+text-align: center;
+line-height: 40px;
+letter-spacing: 0.1em;
+color: #FEFEFE;
+text-shadow: 1px 2px 0px rgba(51, 51, 51, 0.6);
+}
+.product__descr{
+    width: 851px;
+font-style: normal;
+font-weight: normal;
+font-size: 21px;
+line-height: 28px;
+letter-spacing: 0.1em;
+margin-bottom: 50px;
+}
+.product__videos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.product__btn{
+    margin-bottom: 150px;
+}
+.slider{
+    display: none;
+}
+.button{
+    padding: 15px 55px;
+    font-size: 16px;
+    color: #fefefe;
+    border:none;
+    background: rgba(232, 48, 48, 0.85);
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.button:hover{
+    box-shadow: 4px 4px 4px rgba(254, 254, 254, 0.35);
+border-radius: 10px;
+}
+.info-btn{
+    padding: 15px 55px;
+    font-size: 16px;
+    color: #fefefe;
+    border:none;
+    background: #333;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.info-btn:hover{
+    box-shadow: 4px 4px 4px rgba(254, 254, 254, 0.35);
+border-radius: 10px;
+}
+.cooperation{
+    background-color: #333;
+    margin-bottom: 100px;
+}
+.cooperation__title{
+    padding-top: 85px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    color: #AB9170;
+    margin-bottom: 125px;
+}
+.cooperation__text{
+    width: 970px;
+    font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 40px;
+text-align: center;
+margin: 0 auto;
+color: #AB9170;
+margin-bottom: 90px;
+}
+.cooperation__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 130px;
+}
+.cooperation__descr{
+font-weight: bold;
+font-size: 25px;
+line-height: 40px;
+text-align: right;
+
+color: #AB9170;
+}
+.contacts{
+    margin-bottom: 70px;
+}
+.contacts__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact__img{
+    border-radius: 10px;
+}
+.contact__title{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.contact__descr{
+    font-size: 25px;
+    margin-bottom: 46px;
+}
+.icon{
+    width: 67px;
+}
+.contact{
+    margin-bottom: 25px;
+    font-size: 22px;
+    
+}
+.contact__icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+.contact__btn{
+    text-align: center;
+}
+.contact__button{
+    background: rgba(194, 46, 46, 0.8);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+padding: 19px 60px;
+}
+
+.footer{
+    background-color: #333333;
+    text-align: center;
+}
+
+.footer__image{
+    max-width: 325px;
+    height: 75px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+.footer__phone{
+    font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 33px;
+
+color: #AB9170;
+
+text-shadow: 0px 1.5px 0px rgba(0, 0, 0, 0.25);
+}
+.footer__email{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 33px;
+    color: #AB9170;
+    text-shadow: 0px 1.5px 0px rgba(0, 0, 0, 0.25); 
+    margin-bottom: 20px;
+}
+.footer__links{
+font-size: 16px;
+line-height: 19px;
+color: #FEFEFE;
+margin-left:-25px;
+margin-bottom: 35px;
+}
+.footer__link{
+    margin-bottom: 10px;
+}
+.footer__descr{
+font-weight: 500;
+font-size: 18px;
+line-height: 19px;
+color: #AB9170;
+padding-bottom: 20px;
+
+}
+.slider-item{
+    display: none;
+}
+.header__burger{
+    display: none;
+}
+.nav__header-adaptive{
+    display: none;
+}
+.active{
+    display: flex;
+}
+
+
+@media (max-width: 768px){
+    .container{
+        width: 95%;
+    }
+    .header__contacts{
+        display: none;
+    }
+    .phone-adaptive{
+        width: 32px;
+        height: 32px;
+    }
+    .email-adaptive{
+        margin-top: 3px;
+        margin-right: 10px;
+        width:35px;
+        height: 35px;
+    }
+    .header__burger{
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 20px;
+        z-index: 9;
+        order: 0;
+        margin-right: 25px;
+    }
+    
+    .header__burger span{
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        top: 9px;
+        transition: 0.3s;
+
+    }
+
+    .header__burger:after,
+    .header__burger::before{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 30px;
+        left: 0;
+        height: 2px;
+        transition: 0.3s;
+    }
+    .header__burger:before{
+        top: 0;
+    }
+    .header__burger::after{
+        bottom: 0;
+    }
+    .header__burger.active::before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span {
+        display: none;
+    }
+    .promo{
+        background-position: center top;
+    }
+    .promo__title{
+        left: 8%;
+        top: 35%;
+    }
+    .promo__btn-info{
+        top: 55%;
+        left: 35%;
+    }
+    .product__descr{
+        max-width: 700px;
+    }
+    .cooperation__text{
+        max-width: 700px;
+    }
+    .product__videos{
+        display: none;
+    }
+    .product__videos-slider{
+        display: flex;
+        align-items: center;
+
+    }
+    .slider{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .product__video{
+        margin-left: 5px;
+        margin-bottom: 30px;
+    }
+    .product__btn{
+        text-align: center;
+    }
+    .contacts__inner{
+        display: block;
+        text-align: center;
+    }
+    .contact__icons{
+        justify-content: space-around;
+    }
+    .contact__img{
+        margin-bottom: 40px;
+    }
+    .header__nav{
+        display: none;
+    }
+    
+}
+@media (max-width: 360px){
+    .header__logo{
+        width: 100px;
+        height: 25px;
+    }
+    .promo__title{
+        left: 0%;
+        top: 38%;
+        font-size: 28px;
+    }
+    .promo__btn-info{
+        padding: 15px 45px;
+        left: 23%;
+        top: 52%;
+    }
+    .production__title{
+        font-size: 28px;
+    }
+    .product__name{
+        margin: 0 auto;
+    }
+    .button{
+        padding: 15px 50px;
+        margin-bottom: 20px;
+    }
+    .info-btn{
+        margin-bottom: 30px;
+        padding: 15px 91px;
+    }
+    .product__descr{
+        font-size: 15px;
+        max-width: 340px;
+    }
+    iframe{
+        width: 300px;
+    }
+    .slider{
+        width: 300px;
+    }
+    .cooperation__title{
+        font-size: 28px;
+        margin-bottom: 80px;
+    }
+    .cooperation__text{
+        font-size: 15px;
+        max-width: 340px;
+    }
+    .cooperation__descr{
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 20px;
+        order: 1;
+    }
+    .cooperation__button{
+        order:2;
+    }
+    .cooperation__bottom{
+        flex-direction: column;
+    }
+    .contact__img{
+        max-width: 340px;
+    }
+    .scroll{
+        left: 44%;
+    }
+    .product{
+        margin-top: 150px;
+    }
+    .footer__image{
+        max-width: 250px;
+        height: 50px;
+    }
+    .contact{
+        font-size: 20px;
+    }
+    .icon{
+        width: 40px;
+    }
+    
+}
