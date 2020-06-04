@@ -16,3 +16,15 @@ $(document).ready(function(){
       $('body').toggleClass('lock');
     });
   });
+
+  const promoButton = document.querySelector('#promo__btn');
+const modal = document.querySelector('.modal');
+const close = document.querySelector('.close');
+
+promoButton.addEventListener('click', function(event) { 
+     modal.classList.add('is_open');
+});
+
+close.addEventListener('click', function(event) { 
+    modal.classList.remove('is_open');
+});
