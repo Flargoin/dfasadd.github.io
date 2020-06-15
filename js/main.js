@@ -1,3 +1,15 @@
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i=0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+
+    this.nextElementSibling.classList.toggle("show");
+  }
+}
+
+
 $(document).ready(function(){
     $('.slider').slick({
       autoplay:true,
@@ -70,3 +82,4 @@ promoButton.addEventListener('click', function(event) {
 close.addEventListener('click', function(event) { 
     modal.classList.remove('is_open');
 });
+
