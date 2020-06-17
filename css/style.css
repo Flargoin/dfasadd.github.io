@@ -1004,9 +1004,7 @@ box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
 .slick-slide{
     height: -1%;
 }
-.variables{
-    
-}
+
 .slider-4{
   width: 1150px;
   height: 270px;
@@ -1249,6 +1247,7 @@ left: 0;
 }
 
 
+
 /* SENOSAN ADAPTIVE */
 
 @media(max-width:768px){
@@ -1272,9 +1271,6 @@ left: 0;
     .items__title{
         font-size: 35px;
     }
-    .variables{
-    display: none;
-    }
     .variables-mobile{
         display: block;
         overflow: hidden;
@@ -1288,9 +1284,7 @@ left: 0;
     .price__button{
         display: none;
     }
-    .slider-4{
-        display: none;
-    }
+  
     .mobile-items__title{
         display: block;
         padding-top: 60px;
@@ -1946,7 +1940,14 @@ border-radius: 15px;
         width: 720px;
     }
 }
+.color-var{
 
+}
+@media(max-width:768px){
+.slider-table{
+    display: none;
+}
+}
 @media(max-width:360px){
     .header__link{
         font-size: 18px;
@@ -2013,4 +2014,98 @@ border-radius: 15px;
 }
 .inter__promo{
     margin-bottom: 10px;
+}
+.header{
+    height: 45px;
+}
+.header__inner{
+    padding-top: 2px;
+}
+.header__menu li{
+    margin-bottom: 25px;
+}
+.header__menu{
+    text-align: end;
+}
+
+.header__burger::after, .header__burger::before{
+    width: 20px;
+}
+.header__burger span{
+    width: 20px;
+}
+.header__burger{
+    width: 10px;
+}
+.hettich__title{
+    padding-top: 80px;
+    font-size: 30px;
+}
+.hettich__text{
+    width: 320px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.hettich__descr{
+    text-align: center;
+    margin-right: 0;
+}
+.accordion__img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.special-title{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.special-descr{
+    font-size: 25px;
+}
+.special-text{
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.inst-link{
+    display: block;
+    margin: 0 auto;
+}
+.special__cooperation-title{
+    line-height: 35px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.special__cooperation-text{
+    font-size: 15px;
+    line-height: 30px;
+    text-align: left;
+    width: 320px;
+    margin-bottom: 50px;
+}
+.special-coop__title{
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+.special-coop__text{
+    font-size: 16px;
+    text-align: left;
+    line-height: 35px;
+}
+.special-coop__descr{
+    font-size: 20px;
+    text-align: right;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.special__button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.item__color{
+    width: 150px;
+    height: 150px;
 }
