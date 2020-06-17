@@ -1948,11 +1948,28 @@ border-radius: 15px;
 }
 
 @media(max-width:360px){
+    .header__link{
+        font-size: 18px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .promo__loft{
+        margin-bottom: 60px;
+    }
+    .loft__production-title{
+        margin-bottom: 40px;
+    }
+    .loft__production{
+        margin-bottom: 40px;
+    }
     .promo__loft-title{
-        font-size: 30px;
+        font-size: 25px;
+        padding-top: 140px;
+        margin-bottom: 0px;
     }
     .promo__loft-text{
-        font-size: 20px;
+        margin-top: 0;
+        font-size: 15px;
         line-height: 30px;
     }
     .promo__loft-descr {
@@ -1977,6 +1994,9 @@ border-radius: 15px;
 .loft__production-img1{
     width: 360px;
     height: 350px;
+}
+.inter{
+    padding-bottom: 100px;
 }
 .inter__title{
     font-size: 25px;
