@@ -223,7 +223,7 @@ border-bottom: 2px solid #AB9170;
 font-style: normal;
 padding-left: 10px;
 padding-right: 10px;
-font-weight: 400;
+font-weight: 700;
 font-size: 14px;
 line-height: 19px;
 text-align: center;
@@ -1743,7 +1743,7 @@ margin-bottom: 120px;
 .promo__loft{
     background: linear-gradient(180deg, rgba(164, 17, 17, 0.51) 0%, rgba(61, 30, 30, 0.369687) 33.85%, rgba(130, 21, 21, 0.37375) 52.08%, rgba(46, 20, 20, 0.155149) 80.11%, rgba(255, 255, 255, 0) 100%), url(../img/loftimg.jpg);
 box-shadow: 2px 2px 2px rgba(51, 51, 51, 0.25);
-width: 99vw;
+width: 100vw;
 height: 100vh;
 background-position: center;
 background-repeat: no-repeat;
@@ -2105,6 +2105,51 @@ border-radius: 15px;
     margin: 0 auto;
     margin-bottom: 50px;
 }
+.inter__title{
+    padding-top: 70px;
+    margin-bottom: 65px;
+}
+.promo__title{
+    padding-top: 212px;
+}
+.promo__btn-info{
+    margin-top: 30px;
+}
+.scroll{
+    margin-top: 80px;
+}
+.product__descr{
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.product__alvic{
+    border-radius: 0px;
+    width: 360px;
+    height: 360px;
+    margin-bottom: 20px;
+}
+.product__senosan{
+    border-radius: 0px;
+    width: 360px;
+    height: 360px;
+    margin-bottom: 20px;
+}
+.product__fenix{
+    border-radius: 0px;
+    width: 360px;
+    height: 360px;
+}
+.left-item{
+    border-radius: 0px;
+}
+.right-item{
+    border-radius: 0px;
+}
+.production{
+    padding-bottom: 0;
+}
+
+
 .item__color{
     width: 150px;
     height: 150px;
