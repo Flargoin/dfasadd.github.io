@@ -108,7 +108,7 @@ body{
 }
 .promo__title{
     margin: 0 auto;
-    padding-top: 370px;
+    padding-top: 30%;
     display: flex;
     max-width: 750px;
     margin-top: 0;
@@ -2148,8 +2148,38 @@ border-radius: 15px;
 .production{
     padding-bottom: 0;
 }
-
-
+.modal-dialog{
+    padding: 10px 15px;
+}
+.modal-title{
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.feedback-message{
+    display: none;
+}
+.feedback-btn{
+    display: block;
+    margin: 0 auto;
+}
+.modal-header{
+    margin-bottom: 0;
+}
+.feedback-descr{
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.modal-dialog input{
+    margin-bottom: 5px;
+}
+.feedback-input{
+    height: 50px;
+}
+.modal-dialog{
+    max-height: 428px;
+}
 .item__color{
     width: 150px;
     height: 150px;
